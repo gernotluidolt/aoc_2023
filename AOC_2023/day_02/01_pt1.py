@@ -5,8 +5,7 @@ sum = 0
 with open(filepath, 'r') as file:
     for i, line in enumerate(file):
         valid_game = True
-        games = line.split(": ")[1]
-        throws = games.split("; ")
+        throws = line.split(": ")[1].split("; ")
         for throw in throws:
             count = 0
             for j, char in enumerate(throw):
