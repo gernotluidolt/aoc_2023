@@ -3,13 +3,6 @@ filepath = "/Users/gernot/repos/AOC_2023/day_03/03.txt"
 sum = 0
 
 
-def is_rightmost_digit(i, line):
-    if line[i+1] == ".":
-        return True
-    else:
-        return False
-
-
 def check_for_symbol(c):
     if not c.isdigit() and c != "." and c != "\n":
         return True
